@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.Learn", "Vue.Learn\Vue.Learn.csproj", "{9976F4A6-6259-47FF-B3F5-218E3D642B9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9976F4A6-6259-47FF-B3F5-218E3D642B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9976F4A6-6259-47FF-B3F5-218E3D642B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9976F4A6-6259-47FF-B3F5-218E3D642B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9976F4A6-6259-47FF-B3F5-218E3D642B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FFA6F0B-A826-409A-B465-E25BE2C31E2B}
+	EndGlobalSection
+EndGlobal

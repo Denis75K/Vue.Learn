@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product App</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{product}}</h1>
+        <div>
+            <a :href="link">{{linkTitle}}</a>
+            {{description}}
+        </div>
+        
+        <table border="1">
+            <tr v-for="product in catalog" v-bind:key="product.id">
+                <td class="p-2">{{ product.name }}</td>
+                <td class="p-2">{{ product.description }}</td>
+                <td class="p-2">{{ product.id }}</td>
+                <td class="p-2"><a :href="link">{{linkTitle}}</a></td>
+                <td class="p-2"><button class="btn btn-warning">Купить</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+</body>
+</html>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            product: "Socks",
+            altText: "A pair of socks",
+            description: "A pair of socks",
+            link: "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=socks",
+            linkTitle: "подробнее",
+            inStock: true,
+            catalog: [],
+        },
+       
+        created: function () { //Хук, вызываемый после установки всех зависимостей и реактивности
+            console.log(this.message);
+            fetch("/WeatherForecast/products")
+                .then(response => response.json())
+                .then(result => this.catalog = result);
+        }
+    })
+</script>
